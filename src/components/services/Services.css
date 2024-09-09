@@ -1,15 +1,96 @@
-.scrollbar-thin::-webkit-scrollbar{
+.services-main-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.services-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-heading p{
+  font-size: 14px;
+  color: gray;
+}
+
+.services-heading h3{
+    font-size: 28px;
+    color: black;
+    font-weight: 700;
+}
+
+.services-heading h3 span{
+  color: pink;
+}
+
+.service-card-main-section{
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-second-main{
+  position: relative;
+  width: 100%;
+}
+
+.service-cards-section-div{
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 2.5rem;
+  transition: transform 1s ease-in-out;
+}
+
+.service-cards-section-div::-webkit-scrollbar{
     display: flex;
     width: 40px;
     height: 4px;
     background-color: gray;
 }
 
-.scrollbar-thin::-webkit-scrollbar-track {
+.service-cards-section-div::-webkit-scrollbar-track {
     background: gainsboro;        /* color of the tracking area */
   }
   
-.scrollbar-thin::-webkit-scrollbar-thumb {
+.service-cards-section-div::-webkit-scrollbar-thumb {
     background-color: gray;    /* color of the scroll thumb */
     border-radius: 10px;       /* roundness of the scroll thumb */
   }
+
+.service-card{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card img{
+  width: 40px;
+  height: 40px;
+}
+
+.service-card h3{
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+.service-card p{
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+}

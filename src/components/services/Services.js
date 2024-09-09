@@ -1,49 +1,45 @@
 import './Services.css'
+import clinicalDevelopment from '../../assets/clinical-development.png';
+import medicalAffair from '../../assets/medical-affairs.png';
+import pvDrug from '../../assets/drug-safety.png';
+import dataManagment from '../../assets/data-management.png';
+import medicalWriting from '../../assets/medical-writing.png';
+import edcSystem from '../../assets/edc-system.png';
+import infoTech from '../../assets/information-tech.png';
 
 const Services = () => {
   const cards = [
-    {name: 'Clinical Development', icon: '/assets/clinical-development.png', desc: 'please tell your friends about the best css templates website that is TemplateMO'},
-    {name: 'Medical Affairs', icon: '/assets/medical-affairs.png', desc: 'please tell your friends about the best css templates website that is TemplateMO'},
-    {name: 'PV / Drug Safety', icon: '/assets/drug-safety.png', desc: 'please tell your friends about the best css templates website that is TemplateMO'},
-    {name: 'Data Management', icon: '/assets/data-management.png', desc: 'please tell your friends about the best css templates website that is TemplateMO'},
-    {name: 'Medical Writing', icon: '/assets/medical-writing.png', desc: 'please tell your friends about the best css templates website that is TemplateMO'},
-    {name: 'EDC System', icon: '/assets/edc-system.png', desc: 'please tell your friends about the best css templates website that is TemplateMO'},
-    {name: 'Info Tech', icon: '/assets/information-tech.png', desc: 'please tell your friends about the best css templates website that is TemplateMO'},
+    {name: 'Clinical Development', icon: clinicalDevelopment, desc: 'please tell your friends about the best css templates website that is TemplateMO'},
+    {name: 'Medical Affairs', icon: medicalAffair, desc: 'please tell your friends about the best css templates website that is TemplateMO'},
+    {name: 'PV / Drug Safety', icon: pvDrug, desc: 'please tell your friends about the best css templates website that is TemplateMO'},
+    {name: 'Data Management', icon: dataManagment, desc: 'please tell your friends about the best css templates website that is TemplateMO'},
+    {name: 'Medical Writing', icon: medicalWriting, desc: 'please tell your friends about the best css templates website that is TemplateMO'},
+    {name: 'EDC System', icon: edcSystem, desc: 'please tell your friends about the best css templates website that is TemplateMO'},
+    {name: 'Info Tech', icon: infoTech, desc: 'please tell your friends about the best css templates website that is TemplateMO'},
   ];
 
   return (
-    <div className='flex flex-col w-full h-screen items-center justify-center gap-10'>
-      <div className='flex flex-col items-center justify-center'>
-          <p className='text-sm text-gray-400'>OUR SERVICES</p>
-          <h3 className='text-3xl text-black font-bold'>Provided <span className='text-pink-300'> Services </span> </h3>
+    <div className='services-main-section flex flex-col w-full h-screen items-center justify-center gap-10'>
+      <div className='services-heading'>
+          <p >OUR SERVICES</p>
+          <h3 >Provided <span> Services </span> </h3>
       </div>
-      <div className='flex w-3/4 items-center justify-center'>
-      <div className="relative w-full ">
+      <div className='service-card-main-section'>
+      <div className="service-second-main">
       <div
-        className="flex transition-transform overflow-x-auto overflow-y-hidden scrollbar-thin mb-10 duration-1000 ease-in-out"
+        className="service-cards-section-div"
       >
         {cards.map((card, index) => (
           <div
             key={index}
-            className="w-1/4 flex flex-col flex-shrink-0 gap-3 p-4 items-center justify-center"
+            className="service-card"
           >
-           <image src={card.icon} alt='icon' className='w-30 h-20 ' />
-           <h3 className='text-2xl text-black font-bold text-center'>{card.name}</h3>
-           <p className='text-center text-sm text-gray-400'>{card.desc}</p> 
+           <img src={card.icon} alt='icon' />
+           <h3>{card.name}</h3>
+           <p >{card.desc}</p> 
           </div>
         ))}
       </div>
-      {/* <div className="absolute bottom-0 left-1/2 mt-10 transform -translate-x-1/2 flex space-x-2">
-        {Array.from({ length: totalDots }).map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 rounded-full ${
-              currentIndex / 4 === index ? 'bg-black' : 'bg-gray-400'
-            }`}
-            onClick={() => handleDotClick(index)}
-          />
-        ))}
-      </div> */}
     </div>
       </div>
     </div>

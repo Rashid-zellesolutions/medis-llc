@@ -1,0 +1,47 @@
+.menu-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background: linear-gradient(to right, #f97316, #ec4899 50%, #ec4899);
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    width: 25%;
+}
+
+.logo-div img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-div h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 18px;
+}
+
+.menu-links{
+    display: flex;
+}
+
+.menu-items{
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+
+.menu-items h3 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}

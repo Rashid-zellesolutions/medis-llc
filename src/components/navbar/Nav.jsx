@@ -1,19 +1,19 @@
 import React from 'react'
-import './Navbar.css'
+import './Nav.css'
 import logo from '../../assets/medis-llc.png'
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const Navbar = () => {
+const Nav = () => {
   return (
-    <nav className='flex w-full justify-between px-10 py-2 items-center bg-gradient-to-r from-orange-500 via-pink-500 to-pink-500 '
+    <nav className='menu-bar'
     >
-        <div className='flex w-2/6 items-center justify-start gap-5'>
-            <img src={logo} alt='logo' className='w-16 h-auto' />
-            <h3 className='text-4xl text-white font-bold'>MEDIS LLC</h3>
+        <div className='logo-div'>
+            <img src={logo} alt='logo' />
+            <h3>MEDIS LLC</h3>
         </div>
-        <div className='flex'>
-            <div className='flex w-full gap-5 text-white'>
-                <h3 className='cursor-pointer'>
+        <div className='menu-links'>
+            <div className='menu-items'>
+                <h3>
                     <AnchorLink href='#hero'>Home</AnchorLink>
                     
                 </h3>
@@ -38,4 +38,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Nav

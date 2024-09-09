@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css'
 import { FaFacebookF } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { RiLinkedinLine } from "react-icons/ri";
@@ -14,21 +15,21 @@ const Footer = () => {
   ];
 
   return (
-    <div className='flex flex-col w-full items-center justify-center p-4'>
-      <div className='flex w-full items-center justify-center gap-5'>
+    <div className='footer-main-div'>
+      <div className='footer-socal-icons'>
         {socialIcons.map((item, index) => (
-          <a 
+          <button
             key={item.name} // Using name as a unique key prop
-            className='flex items-center justify-center cursor-pointer bg-gradient-to-r from-orange-500 via-pink-500 to-pink-500 p-3 rounded-lg shadow-lg'
+            className='footer-icon-btn'
           >
             {item.icon}
-          </a>
+          </button>
         ))}
       </div>
-      <div className='flex w-full items-center justify-center p-2'>
-        <a href='#' className='text-sm font-bold text-black'>
+      <div className='rights-reserved-div'>
+        <button className='text-sm font-bold text-black'>
           All Rights Reserved To Medis llc
-        </a>
+        </button>
       </div>
     </div>
   );

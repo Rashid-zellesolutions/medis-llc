@@ -1,0 +1,48 @@
+.footer-main-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer-socal-icons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-icon-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #f97316, #ec4899 50%, #ec4899);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.rights-reserved-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.rights-reserved-div button{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}

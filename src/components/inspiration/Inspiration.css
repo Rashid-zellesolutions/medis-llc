@@ -1,3 +1,12 @@
+.inspiration-main-container{
+    display: flex;
+    width: 100%;
+    padding: 20px 40px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center; 
+}
+
 .inspire-bg {
     background-image: url('../../assets/hero/istockphoto-1358625679-612x612.jpg');
     background-repeat: no-repeat;
@@ -5,7 +14,19 @@
     position: relative;
     overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
     height: 50vh;
+    z-index: 50;
+    opacity: 1;
+    width: 75%;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 .inspire-bg::before {
     content: "";
@@ -17,4 +38,29 @@
     background-color: rgba(255, 255, 255, 0.9); /* White overlay with 50% opacity */
     pointer-events: none; /* Ensure it does not interfere with user interactions */
     z-index: 1; /* Place it above the background but below the content */
+}
+
+.inspire-inner-containt{
+    z-index: 100;
+    opacity: 1;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inspire-inner-containt h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+}
+
+.inspire-inner-containt p{
+    text-align: center;
+    font-size: 18px;
+    color: black;
 }
